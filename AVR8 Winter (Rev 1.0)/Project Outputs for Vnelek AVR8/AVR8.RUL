@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: F:\VNELEK Company\Project From VNELEK\Dat Board\4,AVR8 Winter (Rev 1.0)\AVR8.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=11.81
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=19.69
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

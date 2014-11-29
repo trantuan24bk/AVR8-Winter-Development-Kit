@@ -1,0 +1,82 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 B89A      		sbi 55-32,0
+  25               	.LM3:
+  26 0002 B99A      		sbi 55-32,1
+  27               	.LM4:
+  28 0004 51E0      		ldi r21,lo8(1)
+  29               	.LM5:
+  30 0006 42E0      		ldi r20,lo8(2)
+  31               	.LBB12:
+  32               	.LBB13:
+  33               	.LBB14:
+  34               	.LBB15:
+  35               	.LM6:
+  36 0008 2CE2      		ldi r18,lo8(300)
+  37 000a 31E0      		ldi r19,hi8(300)
+  38               	.LVL0:
+  39               	.L3:
+  40               	.LBE15:
+  41               	.LBE14:
+  42               	.LBE13:
+  43               	.LBE12:
+  44               	.LM7:
+  45 000c 88B3      		in r24,56-32
+  46               	.LVL1:
+  47 000e 8527      		eor r24,r21
+  48 0010 88BB      		out 56-32,r24
+  49               	.LM8:
+  50 0012 88B3      		in r24,56-32
+  51 0014 8427      		eor r24,r20
+  52 0016 88BB      		out 56-32,r24
+  53 0018 88EB      		ldi r24,lo8(3000)
+  54 001a 9BE0      		ldi r25,hi8(3000)
+  55               	.LVL2:
+  56               	.L2:
+  57               	.LBB19:
+  58               	.LBB18:
+  59               	.LBB17:
+  60               	.LBB16:
+  61               	.LM9:
+  62 001c F901      		movw r30,r18
+  63               	/* #APP */
+  64               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+  65 001e 3197      		1: sbiw r30,1
+  66 0020 01F4      		brne 1b
+  67               	 ;  0 "" 2
+  68               	/* #NOAPP */
+  69               	.LBE16:
+  70               	.LBE17:
+  71               	.LM10:
+  72 0022 0197      		sbiw r24,1
+  73               	.LM11:
+  74 0024 01F4      		brne .L2
+  75 0026 00C0      		rjmp .L3
+  76               	.LBE18:
+  77               	.LBE19:
+  78               	.LFE6:
+ 104               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\BLACKHAT\AppData\Local\Temp/ccScCdbc.s:2      *ABS*:0000003f __SREG__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccScCdbc.s:3      *ABS*:0000003e __SP_H__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccScCdbc.s:4      *ABS*:0000003d __SP_L__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccScCdbc.s:5      *ABS*:00000034 __CCP__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccScCdbc.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccScCdbc.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccScCdbc.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,125 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 8FEF      		ldi r24,lo8(-1)
+  25 0002 87BB      		out 55-32,r24
+  26               	.LM3:
+  27 0004 84BB      		out 52-32,r24
+  28               	.LM4:
+  29 0006 81BB      		out 49-32,r24
+  30               	.LM5:
+  31 0008 8A98      		cbi 49-32,2
+  32               	.LBB18:
+  33               	.LBB19:
+  34               	.LBB20:
+  35               	.LBB21:
+  36               	.LM6:
+  37 000a 4CE2      		ldi r20,lo8(300)
+  38 000c 51E0      		ldi r21,hi8(300)
+  39               	.LBE21:
+  40               	.LBE20:
+  41               	.LBE19:
+  42               	.LBE18:
+  43               	.LM7:
+  44 000e 2FEF      		ldi r18,lo8(-1)
+  45               	.LVL0:
+  46               	.L9:
+  47               	.LM8:
+  48 0010 829B      		sbis 48-32,2
+  49 0012 00C0      		rjmp .L2
+  50               	.LM9:
+  51 0014 18BA      		out 56-32,__zero_reg__
+  52               	.LM10:
+  53 0016 15BA      		out 53-32,__zero_reg__
+  54               	.LM11:
+  55 0018 12BA      		out 50-32,__zero_reg__
+  56 001a 88EB      		ldi r24,lo8(3000)
+  57 001c 9BE0      		ldi r25,hi8(3000)
+  58               	.LVL1:
+  59               	.L3:
+  60               	.LBB25:
+  61               	.LBB24:
+  62               	.LBB23:
+  63               	.LBB22:
+  64               	.LM12:
+  65 001e FA01      		movw r30,r20
+  66               	.LVL2:
+  67               	/* #APP */
+  68               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+  69 0020 3197      		1: sbiw r30,1
+  70 0022 01F4      		brne 1b
+  71               	 ;  0 "" 2
+  72               	/* #NOAPP */
+  73               	.LBE22:
+  74               	.LBE23:
+  75               	.LM13:
+  76 0024 0197      		sbiw r24,1
+  77               	.LM14:
+  78 0026 01F4      		brne .L3
+  79               	.LBE24:
+  80               	.LBE25:
+  81               	.LM15:
+  82 0028 28BB      		out 56-32,r18
+  83               	.LM16:
+  84 002a 25BB      		out 53-32,r18
+  85               	.LM17:
+  86 002c 22BB      		out 50-32,r18
+  87 002e 88EB      		ldi r24,lo8(3000)
+  88 0030 9BE0      		ldi r25,hi8(3000)
+  89               	.LVL3:
+  90               	.L4:
+  91               	.LBB26:
+  92               	.LBB27:
+  93               	.LBB28:
+  94               	.LBB29:
+  95               	.LM18:
+  96 0032 FA01      		movw r30,r20
+  97               	.LVL4:
+  98               	/* #APP */
+  99               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 100 0034 3197      		1: sbiw r30,1
+ 101 0036 01F4      		brne 1b
+ 102               	 ;  0 "" 2
+ 103               	/* #NOAPP */
+ 104               	.LBE29:
+ 105               	.LBE28:
+ 106               	.LM19:
+ 107 0038 0197      		sbiw r24,1
+ 108               	.LM20:
+ 109 003a 01F4      		brne .L4
+ 110 003c 00C0      		rjmp .L9
+ 111               	.L2:
+ 112               	.LBE27:
+ 113               	.LBE26:
+ 114               	.LM21:
+ 115 003e 18BA      		out 56-32,__zero_reg__
+ 116               	.LM22:
+ 117 0040 15BA      		out 53-32,__zero_reg__
+ 118               	.LM23:
+ 119 0042 12BA      		out 50-32,__zero_reg__
+ 120 0044 00C0      		rjmp .L9
+ 121               	.LFE6:
+ 147               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\BLACKHAT\AppData\Local\Temp/ccGbUq3q.s:2      *ABS*:0000003f __SREG__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccGbUq3q.s:3      *ABS*:0000003e __SP_H__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccGbUq3q.s:4      *ABS*:0000003d __SP_L__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccGbUq3q.s:5      *ABS*:00000034 __CCP__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccGbUq3q.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccGbUq3q.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\BLACKHAT\AppData\Local\Temp/ccGbUq3q.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS
